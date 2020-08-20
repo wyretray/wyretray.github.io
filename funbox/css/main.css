@@ -13,6 +13,8 @@
     src: url(../font/exo.otf); 
 }
 
+/*@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');*/
+
 body
 {
 	font-family: 'PT Sans', sans-serif;
@@ -236,7 +238,7 @@ body
 	color: #ffff66;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1240px)
+@media screen and (min-width: 400px) and (max-width: 1240px)
 {
 	.placeholder
 	{
@@ -248,7 +250,7 @@ body
 	}
 }
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 400px) 
 {
 	.main-block__container
 	{
