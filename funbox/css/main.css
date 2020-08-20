@@ -1,0 +1,275 @@
+@font-face 
+{
+    font-family: Exo;
+    src: url(../font/exo.otf); 
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');*/
+
+
+@font-face 
+{
+    font-family: Exo;
+    src: url(../font/exo.otf); 
+}
+
+/*@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');*/
+
+body
+{
+	font-family: 'PT Sans', sans-serif;
+	background-image: url(../img/bg.jpg);
+	color: #000000;
+}
+
+.caption 
+{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	padding: 50px;
+}
+
+.caption h1
+{
+	color: #ffffff;
+	font-family: Exo;
+	font-size: 36pt;
+}
+
+.main-block
+{
+
+}
+
+.main-block__container
+{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex; 
+	-ms-flex-wrap: wrap; 
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	padding: 50px;
+}
+
+.placeholder
+{
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
+	width: 340px;
+	margin-right: 50px;
+}
+
+.placeholder:last-child 
+{
+	margin-right: 0px;
+}
+
+.card__header
+{
+	width: 100%;
+	height: 50px;
+	position: relative;
+}
+
+.card__header__triangle__border
+{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+	        clip-path: polygon(100% 0, 0 100%, 100% 100%);
+	width: 50px;
+	height: 50px;
+	background-color: #1698d9;
+	position: absolute;
+	left: 0px;
+}
+
+.card__header__triangle
+{
+	float: left;
+	display: inline-block;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 50px;
+	height: 50px;
+	background-color: #ffffff;
+	-webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+	        clip-path: polygon(100% 0, 0 100%, 100% 100%);
+	position: absolute;
+	left: 5px;
+	border-top: 4pt solid #1698d9;
+}
+
+.card__header__stripe
+{
+	display: inline-block;
+	height: 50px;
+	width: 285px;
+	background-color: #ffffff;
+	border-top: 4pt solid #1698d9;
+	border-right: 4pt solid #1698d9;
+	float: right;
+}
+
+.card__content
+{
+	position:relative;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	background-color: #ffffff;
+	width: 100%;
+	height: 490px;
+	border: 4pt solid #1698d9;
+	border-top: none;
+}
+
+.disabled
+{
+	-webkit-filter: grayscale(100%) contrast(50%) brightness(150%);
+	        filter: grayscale(100%) contrast(50%) brightness(150%);
+}
+
+.card__container
+{
+	padding: 0px 35px;
+}
+
+.card__content h1
+{
+	font-weight: 600;
+	font-size: 42pt;
+	/*margin-bottom: 5px;*/
+}
+
+.card__content h2
+{
+	font-weight: 600;
+	font-size: 34pt;
+	margin-bottom: 10px;
+}
+
+.card__content h3
+{
+	color: #666666;
+	margin-bottom: 5px;
+}
+
+.card__content ul > li
+{
+	color: #666666;
+	margin-bottom: 5px;
+}
+
+.card__content ul > li > b
+{
+	font-weight: 600;
+}
+
+.card__image
+{
+	width: 100%;
+	height: 250px;
+	background-image: url(../img/cat.jpg);
+	background-size: 350px;
+	position: absolute;
+	bottom: 0px;
+}
+
+.card__label
+{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: #1698d9;
+	text-align: center; 
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	color: #ffffff;
+	padding: 10px;
+	z-index: 10;
+}
+
+.card__label__weight
+{
+	font-size: 30pt;
+}
+
+.card__label__units
+{
+	font-size: 15pt;
+}
+
+.card__active
+{
+	border-color: #d91667;
+}
+
+.card__header__triangle__border__active, .card__label__active
+{
+	background-color: #d91667;
+}
+
+.annotation
+{
+	padding-top: 20px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.annotation a
+{
+	text-decoration: none;
+	color: #1698d9;
+	border-bottom: 1px dashed #1698d9;
+}
+
+.annotation_disabled
+{
+	-webkit-filter: grayscale(0%) contrast(100%) brightness(100%);
+	        filter: grayscale(0%) contrast(100%) brightness(100%);
+	color: #ffff66;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1240px)
+{
+	.placeholder
+	{
+		margin-bottom: 50px;
+	}
+	.placeholder:last-child
+	{
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 768px) 
+{
+	.main-block__container
+	{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		padding: 10px;
+	}	
+	.placeholder
+	{
+		margin: 0;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	.placeholder:last-child
+	{
+		margin-bottom: 0;
+	}
+}
+
+
